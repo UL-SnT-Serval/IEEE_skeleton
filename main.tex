@@ -1,0 +1,103 @@
+\documentclass[conference]{IEEEtran}
+%\documentclass[sigconf,review,anonymous]{acmart}
+%\documentclass[runningheads]{llncs}
+
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{makecell}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+
+\usepackage{booktabs} % For formal tables
+
+
+% Copyright
+%\setcopyright{none}
+%\setcopyright{acmcopyright}
+%\setcopyright{acmlicensed}
+%\setcopyright{rightsretained}
+% %====== ACM Help on Formatting Papers  =======
+% \pdfpagewidth=8.5in 
+% \pdfpageheight=11in
+% \usepackage[utf8]{inputenc} 
+% \usepackage[T1]{fontenc}
+% \usepackage{microtype}
+% \clubpenalty = 10000
+% \widowpenalty = 10000
+% \displaywidowpenalty = 10000
+
+%\usepackage{subfig}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{alltt}
+\usepackage{url}
+\usepackage{xcolor,colortbl}
+\usepackage{multirow}
+\usepackage{flushend}
+\usepackage{proof}
+
+\usepackage{enumitem}
+\usepackage{listings}             % Include the listings-package
+\usepackage{xcolor}
+\usepackage{stackengine}
+\usepackage{boxhandler}
+
+
+\newboolean{showcomments}
+\setboolean{showcomments}{true}
+\ifthenelse{\boolean{showcomments}}
+ { \newcommand{\mynote}[2]{
+      \fbox{\bfseries\sffamily\scriptsize#1}
+        {\small$\blacktriangleright$\textsf{\textcolor{red}{{\em #2}\bf }}$\blacktriangleleft$}}}
+        { \newcommand{\mynote}[2]{}}
+\newcommand{\todo}[1]{\textcolor{red}{{\em TODO}: \bf #1}}
+\newcommand{\me}[1]{\mynote{me}{#1}} 
+  
+
+\newcommand{\etal}{\textit{et al., }}
+\newcommand{\eg}{\textit{e.g., }}
+\newcommand{\ie}{\textit{i.e., }}
+\newcommand{\cf}{\textit{cf. }}
+\newcommand{\resp}{\textit{resp. }}
+
+%====== Own definitions =======
+
+
+\begin{document}
+
+\title{My Title}
+
+\author{\IEEEauthorblockN{Anonymous Authors}}
+% \author{\IEEEauthorblockN{A}
+% \IEEEauthorblockA{University of Luxembourg\\
+% Luxembourg}
+% \and
+% \IEEEauthorblockN{B}
+% \IEEEauthorblockA{University of Luxembourg\\
+% Luxembourg}
+% }
+ 
+
+
+\maketitle              % typeset the header of the contribution
+\input{abstract}
+\newpage
+\bibliographystyle{plain}
+\clearpage
+\bibliography{bibliography}
+\end{document}
+
+
