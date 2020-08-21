@@ -28,5 +28,5 @@ jobs:
         root_file: main.tex
     - uses: actions/upload-artifact@v1
       with:
-        name: pdf
+        name: paper
         path: main.pdf  
